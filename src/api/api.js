@@ -13,7 +13,7 @@ export const getBookById = async (id) => {
 };
 
 export const addBook = async (book) => {
-  const res = await fetch("http://localhost:3001/books", {
+  const res = await fetch("https://book-management-dashboard-2.onrender.com/books", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(book),
