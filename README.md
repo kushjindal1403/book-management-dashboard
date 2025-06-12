@@ -1,70 +1,143 @@
-# Getting Started with Create React App
+# 📚 Book Management Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and responsive web app for managing books using React, TailwindCSS (Material Tailwind), and a mock API. It supports full CRUD operations — add, view, update, and delete books, with search, filters, and pagination.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- ✅ Add, edit, delete books
+- 🔍 Search by title/author
+- 🎯 Filter by genre and status (Available / Issued)
+- 📄 Paginated book listing (10 per page)
+- 📱 Responsive design using Material Tailwind
+- 🧠 Form validation using `react-hook-form`
+- 🍞 Toast notifications for actions
+- 🔁 API integrated using `fetch` with fallback for errors
+- 📸 Image-based UI card layout
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧰 Tech Stack
 
-### `npm test`
+- ⚛️ **React.js** (functional components + hooks)
+- 💨 **TailwindCSS** with [Material Tailwind](https://www.material-tailwind.com/)
+- 🌐 **React Router DOM**
+- 🔄 **CRUD API** via [json-server](https://github.com/typicode/json-server) or [crudcrud.com](https://crudcrud.com)
+- ✅ **react-hook-form** for form handling
+- 🔥 **react-toastify** for alerts
+- 🎨 Custom components and reusable style classes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Folder Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+src/
+├── api/ # API calls (GET, POST, PUT, DELETE)
+│ └── api.js
+├── components/
+│ ├── books/
+│ │ ├── BookCard.js
+│ │ ├── BookList.js
+│ │ └── Form.js
+│ └── common/
+│ ├── Pagination.js
+│ └── StickyNavbar.js
+├── styles/
+│ └── bookCard.styles.ts # Tailwind class exports
+├── App.js
+├── index.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+yaml
+Copy
+Edit
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Installation & Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Clone the repository
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/your-username/book-management-dashboard.git
+cd book-management-dashboard
+2. Install dependencies
+bash
+Copy
+Edit
+npm install
+3. Start mock API (with json-server)
+bash
+Copy
+Edit
+npm install -g json-server
+json-server --watch db.json --port 3001
+Alternatively, replace API URL in api.js with crudcrud.com temporary endpoint.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Start the React app
+bash
+Copy
+Edit
+npm start
+🌐 Available Routes
+Path	Description
+/	Home - Book listing
+/form	Add a new book
+/form/:id	Edit existing book
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+✨ Screenshots
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+📝 API Format (db.json example)
+json
+Copy
+Edit
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "genre": "Programming",
+      "year": "2008",
+      "image": "https://link.to/image.jpg",
+      "status": "Available"
+    }
+  ]
+}
+📦 Environment Variables (Optional)
+You can configure the API base URL using .env:
 
-### Code Splitting
+env
+Copy
+Edit
+REACT_APP_API_URL=http://localhost:3001/books
+Then update api.js to use:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+js
+Copy
+Edit
+const API_URL = process.env.REACT_APP_API_URL;
+🙌 Acknowledgements
+Material Tailwind
 
-### Analyzing the Bundle Size
+react-hook-form
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+json-server
 
-### Making a Progressive Web App
+react-toastify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+💡 Future Improvements
+Global state using Redux or Context
 
-### Advanced Configuration
+Dark mode toggle
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Upload book cover image
 
-### Deployment
+Better form validation and accessibility
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Authentication flow
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📬 Contact
+Made by Kush Jindal — feel free to reach out if you have questions or ideas!
