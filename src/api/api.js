@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3001/books";
+const API_URL = "https://book-management-dashboard-2.onrender.com/books";
 
 export const getBooks = async () => {
   const res = await fetch(API_URL);
