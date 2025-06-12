@@ -81,6 +81,18 @@ export default function BookForm({ books = [], setBooks }) {
     }
   };
 
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setBook((prev) => ({ ...prev, image: reader.result }));
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+
   return (
     <Card className="max-w-xl mx-auto mt-10 p-6">
       <Typography variant="h4" color="blue-gray" className="mb-4">
@@ -134,10 +146,10 @@ export default function BookForm({ books = [], setBooks }) {
             required
           />
           <Input
-            label="Image URL"
-            name="image"
-            value={book.image}
-            onChange={handleChange}
+            type="file"
+            accept="image/*"
+            onChange={(e) => handleImageUpload(e)}
+            label="Upload Image"
           />
           <select
             name="status"
