@@ -1,0 +1,184 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Classic",
+      "year": 1960,
+      "status": "Available",
+      "image": "https://covers.openlibrary.org/b/id/8228691-L.jpg"
+    },
+    {
+      "id": "2",
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian",
+      "year": 1949,
+      "status": "Issued",
+      "image": "https://covers.openlibrary.org/b/id/7222246-L.jpg"
+    },
+    {
+      "id": "3",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Classic",
+      "year": 1925,
+      "status": "Available",
+      "image": "https://covers.openlibrary.org/b/id/7222276-L.jpg"
+    },
+    {
+      "id": "4",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "genre": "Coming-of-Age",
+      "year": 1951,
+      "status": "Available",
+      "image": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "Romance",
+      "year": 1813,
+      "status": "Issued",
+      "image": "https://covers.openlibrary.org/b/id/8091016-L.jpg"
+    },
+    {
+      "id": "6",
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "year": 1937,
+      "status": "Available",
+      "image": "https://covers.openlibrary.org/b/id/6979861-L.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "genre": "Sci-Fi",
+      "year": 1953,
+      "status": "Issued",
+      "image": "https://covers.openlibrary.org/b/id/7222242-L.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "genre": "Gothic",
+      "year": 1847,
+      "status": "Available",
+      "image": "https://covers.openlibrary.org/b/id/8087893-L.jpg"
+    },
+    {
+      "id": "9",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "genre": "Adventure",
+      "year": 1988,
+      "status": "Issued",
+      "image": "https://covers.openlibrary.org/b/id/8128691-L.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "genre": "Dystopian",
+      "year": 1932,
+      "status": "Available",
+      "image": "https://covers.openlibrary.org/b/id/7222249-L.jpg"
+    },
+    {
+      "id": "11",
+      "title": "The Road",
+      "author": "Cormac McCarthy",
+      "genre": "Post-Apocalyptic",
+      "year": 2006,
+      "status": "Available",
+      "image": "https://covers.openlibrary.org/b/id/7222251-L.jpg"
+    },
+    {
+      "id": "12",
+      "title": "Moby-Dick",
+      "author": "Herman Melville",
+      "genre": "Adventure",
+      "year": 1851,
+      "status": "Issued",
+      "image": "https://covers.openlibrary.org/b/id/8101241-L.jpg"
+    },
+    {
+      "id": "13",
+      "title": "The Shining",
+      "author": "Stephen King",
+      "genre": "Horror",
+      "year": 1977,
+      "status": "Available",
+      "image": "https://covers.openlibrary.org/b/id/8235081-L.jpg"
+    },
+    {
+      "id": "14",
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "genre": "Satire",
+      "year": 1945,
+      "status": "Available",
+      "image": "https://covers.openlibrary.org/b/id/7222248-L.jpg"
+    },
+    {
+      "id": "15",
+      "title": "Gone Girl",
+      "author": "Gillian Flynn",
+      "genre": "Thriller",
+      "year": 2012,
+      "status": "Issued",
+      "image": "https://covers.openlibrary.org/b/id/8244150-L.jpg"
+    },
+    {
+      "id": "16",
+      "title": "The Book Thief",
+      "author": "Markus Zusak",
+      "genre": "Historical Fiction",
+      "year": 2005,
+      "status": "Available",
+      "image": "https://covers.openlibrary.org/b/id/8099644-L.jpg"
+    },
+    {
+      "id": "17",
+      "title": "The Fault in Our Stars",
+      "author": "John Green",
+      "genre": "Young Adult",
+      "year": 2012,
+      "status": "Issued",
+      "image": "https://covers.openlibrary.org/b/id/8091023-L.jpg"
+    },
+    {
+      "id": "18",
+      "title": "The Kite Runner",
+      "author": "Khaled Hosseini",
+      "genre": "Drama",
+      "year": 2003,
+      "status": "Available",
+      "image": "https://covers.openlibrary.org/b/id/8091021-L.jpg"
+    },
+    {
+      "id": "19",
+      "title": "A Game of Thrones",
+      "author": "George R.R. Martin",
+      "genre": "Fantasy",
+      "year": 1996,
+      "status": "Issued",
+      "image": "https://covers.openlibrary.org/b/id/7109826-L.jpg"
+    },
+    {
+      "id": "20",
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "genre": "Non-Fiction",
+      "year": 2011,
+      "status": "Available",
+      "image": "https://covers.openlibrary.org/b/id/8369253-L.jpg"
+    }
+  ]
+}

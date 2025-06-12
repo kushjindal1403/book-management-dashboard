@@ -37,9 +37,7 @@ useEffect(() => {
             element={
               <BookList
                 books={books}
-                setBooks={setBooks}
                 search={search}
-                setSearch={setSearch}
               />
             }
           />
